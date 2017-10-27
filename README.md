@@ -1,9 +1,15 @@
 # Password Strength Calculator
 
-[TODO. There will be project description]
+It's program that check password strength and print it level.<br>
+
+Program check password by such parameters:
+* use of both upper-case and lower-case letters (case sensitivity)
+* inclusion of one or more numerical digits
+* inclusion of special characters, such as @, #, $ and etc.
+* prohibition of words found in a password blacklist
 
 # How to start program
-To start the script you need a blacklist.txt file, you'll find it on github <br>
+To start the script you need a blacklist.txt file, you'll find it on [blacklist.txt](https://github.com/xdass/6_password_strength/blob/master/blacklist.txt) <br>
 
 **On linux:**
 ```bash
