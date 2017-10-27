@@ -1,4 +1,5 @@
 import re
+import getpass
 from string import punctuation
 
 
@@ -37,7 +38,7 @@ def print_password_strength(password_strength):
         print('Очень крутой пароль')
 
 if __name__ == '__main__':
-    user_password = input('Введите пароль: ')
+    user_password = getpass.getpass(prompt='Введите пароль: ')
     blacklist = load_passwords_blacklist('blacklist.txt')
-    password_points = get_password_strength(user_password, blacklist)
-    print_password_strength(password_points)
+    password_strength = get_password_strength(user_password, blacklist)
+    print_password_strength(password_strength)
